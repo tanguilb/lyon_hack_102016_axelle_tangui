@@ -18,7 +18,7 @@ if (isset($_FILES['picture']) AND $_FILES['picture']['error'] == 0)
 
     // Testons si le fichier n'est pas trop gros
 
-    if ($_FILES['picture']['size'] <= 1000000)
+    if ($_FILES['picture']['size'] <= 2000000)
 
     {
 
@@ -29,6 +29,8 @@ if (isset($_FILES['picture']) AND $_FILES['picture']['error'] == 0)
         $extension_upload = $infosfichier['extension'];
 
         $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
+        $name = $infosfichier['filename'];
+        $file = $name. '.' .$extension_upload;
 
         if (in_array($extension_upload, $extensions_autorisees))
 
@@ -45,8 +47,11 @@ if (isset($_FILES['picture']) AND $_FILES['picture']['error'] == 0)
     }
 
 }
+$pictureurl = '../public/img/'.$file;
 
-$req = 'INSERT INTO guest (path_picture, guest_name) VALUES ("../public/img/$_FILES[\'picture\'][\'name\']"," $_POST[guest_name]")'
+
+
+$req = "INSERT INTO guest (path_picture, guest_name) VALUES ('$pictureurl', '$_POST[guest_name]')";
 $result = execSql(getConnexion(), $req);
 
 header('location: ../public/index.php');

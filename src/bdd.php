@@ -9,7 +9,7 @@ function getConnexion(){
     $host = "localhost";
     $password = "azerty1234";
     $user = "root";
-    $db = "test";
+    $db = "sock";
 
     $mysqli = new mysqli($host, $user, $password, $db);
     if (false === $mysqli->connect_errno) {
