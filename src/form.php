@@ -50,7 +50,6 @@ if (isset($_FILES['picture']) AND $_FILES['picture']['error'] == 0)
 $pictureurl = '../public/img/'.$file;
 
 
-
 $req = "INSERT INTO guest (path_picture, guest_name) VALUES ('$pictureurl', '$_POST[guest_name]')";
 $result = execSql(getConnexion(), $req);
 
