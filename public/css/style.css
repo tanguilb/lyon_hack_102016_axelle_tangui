@@ -1,0 +1,19 @@
+body {
+    padding:: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    back
+}
+
+h2 {
+    font-weight: 300;
+    color: rgba(251,168,88, 1);
+    text-align: center;
+}
+
+hr {
+    width:50px;
+    color: #35383a;
+    border: 1px solid #35383a;
+}
