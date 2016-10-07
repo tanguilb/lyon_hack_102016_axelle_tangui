@@ -15,25 +15,31 @@
         <script src="script.js"></script>
     </head>
 <body>
+
 <?php include ('../src/bdd.php') ?>
-<header>
-    <a href="http"><img id="logo-wcs" src="images/logo-wildcodeschool.png" alt="Logo of Wild Code School" /></a>
-</header>
-<section id="gallery">
-    <div class="container">
-        <div class="row">
-            <h2>Quelles sont les trois paires de chaussettes que vous préférez ?</h2>
-            <hr>
-        </div>
-        <?php
-        $sql = 'SELECT path_picture FROM guest';
-        $res = execSql(getConnexion(), $sql);
-        while ($row = $res->fetch_assoc()) {
-            echo '<div class="col-xs 12 col-md-4 socks-images"><img src="' . $row["path_picture"] . '"> . <button class="like"><i class="fa fa-heart" aria-hidden="true"></i></button></div>';
-        } ?>
-        <div class="row">
-        </div>
-    </div>
+
+    <header>
+        <a href="http"><img id="logo-wcs" src="images/logo-wildcodeschool.png" alt="Logo of Wild Code School" /></a>
+    </header>
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <h2>Quelles sont les <span>trois paires</span> de chaussettes que vous préférez ?</h2>
+                <hr>
+            </div>
+
+            <div class="row" id="pictures-row">
+                    <?php
+                        $sql = 'SELECT path_picture FROM guest';
+                        $res = execSql(getConnexion(), $sql);
+
+                        while ($row = $res->fetch_assoc()) {
+                            echo '<div class="col-xs 12 col-md-4 socks-images"><img src="' . $row["path_picture"] . '"> . <button class="like"><i class="fa fa-heart" aria-hidden="true"></i></button></div>';
+                        }
+                    ?>
+            </div>
+    </section>
 
 </body>
 </html>
