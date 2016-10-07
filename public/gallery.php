@@ -18,26 +18,32 @@
 
 <?php include ('../src/bdd.php') ?>
 
-    <header>
-        <a href="http"><img id="logo-wcs" src="images/logo-wildcodeschool.png" alt="Logo of Wild Code School" /></a>
+    <header class="container-fluid">
+            <a href="http://www.wildcodeschool.fr/">
+                <img id="logo-wcs" src="images/logo-wildcodeschool.png" alt="Logo of Wild Code School" />
+            </a>
+            <h1><span>Apprends à coder</span> <br>sans chaussures !</h1>
     </header>
 
-    <section id="gallery">
-        <div class="container">
-            <div class="row">
+    <section id="gallery" class="container-fluid">
+        <div class="row">
+            <div class="container">
                 <h2>Quelles sont les <span>trois paires</span> de chaussettes que vous préférez ?</h2>
                 <hr>
             </div>
+        </div>
 
             <div class="row" id="pictures-row">
+                <div class="container">
                     <?php
                         $sql = 'SELECT path_picture FROM guest';
                         $res = execSql(getConnexion(), $sql);
 
                         while ($row = $res->fetch_assoc()) {
-                            echo '<div class="col-xs 12 col-md-4 socks-images"><img src="' . $row["path_picture"] . '"> . <button class="like"><i class="fa fa-heart" aria-hidden="true"></i></button></div>';
+                            echo '<div class="col-xs 12 col-md-4 socks-images"><img src="' . $row["path_picture"] . '"><button class="like"><i class="fa fa-heart" aria-hidden="true"></i></button></div>';
                         }
                     ?>
+                </div>
             </div>
     </section>
 

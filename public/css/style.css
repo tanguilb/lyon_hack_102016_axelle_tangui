@@ -3,43 +3,36 @@ body {
     margin: 0;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
-    back
+}
+
+h1 {
+    font-weight: 300;
+    color: #000;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+h1 span {
+    font-weight: 400;
 }
 
 hr {
     width:50px;
     color: #58c4b8;
     border: 1px solid #58c4b8;
+    margin-bottom:30px;
 }
- /*HEADER*/
-
-
-#logo-wcs {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-}
-
-/*GALLERY*/
-
-#gallery h2 {
-    font-weight: 300;
-    color: rgba(251,168,88, 1);
-    text-align: center;
-}
-
-#gallery h2 span {
-    font-weight:400;
-}
-
 
 /*HEADER*/
 
+header {
+    padding-top:20px;
+}
 
 #logo-wcs {
     display: block;
     margin: 0 auto;
-    width: 100px;
+    width: 80px;
 }
 
 /*GALLERY*/
@@ -48,15 +41,20 @@ hr {
     font-weight: 300;
     color: rgba(251,168,88, 1);
     text-align: center;
+    margin-top:50px;
 }
 
 #gallery h2 span {
     font-weight:400;
 }
 
-
 #pictures-row {
     background-color: #f1f1f1;
+    padding: 40px 0;
+}
+
+.socks-images {
+    margin-bottom: 20px;
 }
 
 .socks-images img {
@@ -69,13 +67,13 @@ button.like {
     border:none;
     color: #F23F66;
     font-size:1.8em;
-    display: block;
-    margin: 0 auto;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 90px;
+    padding: 6px 10px;
+    position: absolute;
+    bottom:10px;
+    right:25px;
 }
 
 button.like:hover {
     color: #BF002E;
 }
-
