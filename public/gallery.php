@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -41,27 +42,20 @@
                         $sql = "SELECT * FROM guest WHERE guest_name <> '$_POST[login]'";
                         $result = execSql($con, $sql);
 
-                        $i = 1;
 
                         while ($row = $result->fetch_assoc()) {
+                        $id = $row['id'];
 
+                    echo '<div class="col-xs 12 col-md-4 socks-images"><img src="' . $row["path_picture"] . '"> 
+                            <form method="post" action="addlike.php" >' ?>
 
-                            echo '<div class="col-xs 12 col-md-4 socks-images"><img src="' .$row["path_picture"]. '"> 
-                            <form method="post" action="addlike.php" >'?>
-
-                            <input type="hidden" name="<?php echo $i; ?> ">
-                            <button type="submit" class="like" ><i class="fa fa-heart" aria-hidden="true"></i></button>
-                            </form>
-                            </div>
-                            <?php
-                            $i++;
-
-
-                        while ($row = $res->fetch_assoc()) {
-                            echo '<div class="col-xs 12 col-md-4 socks-images"><img src="' . $row["path_picture"] . '"><button class="like"><i class="fa fa-heart" aria-hidden="true"></i></button></div>';
-
-                        }
-                    ?>
+                    <input type="hidden" name="id[]" value="<?php $row['id']; ?>">
+                    <button type="submit" class="like"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <?php
+                }
+                ?>
                 </div>
             </div>
     </section>

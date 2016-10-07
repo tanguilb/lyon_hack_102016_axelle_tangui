@@ -7,11 +7,16 @@
  */
 
 include '../src/bdd.php';
+foreach($_POST['id'] as $values){
 
-$con = getConnexion();
-$req = "UPDATE guest SET guest_vote=guest_vote+1 WHERE id = '$_POST[$i]'";
+    echo $values;
+/*$con = getConnexion();
+
+
+$req = 'UPDATE guest SET guest_vote=guest_vote+1 WHERE id = $values';
 
 $result = execSql($con, $req);
 
-header('location: gallery.php');
+header('location: gallery.php');*/
 
+}
