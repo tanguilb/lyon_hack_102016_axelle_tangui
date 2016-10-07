@@ -37,23 +37,25 @@ header h1 {
     text-align: center;
 }
 
-header h1 span {
+header h1 span,
+#upload-page h1 span{
     font-weight: 400;
 }
 
 
 /*INDEX | UPLOAD PAGE*/
-
 #upload-page {
-    background: url("../images/coding-site-web.jpg");
+    background: url("../images/computer-coding-site-web.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height:100vh;
 }
 
-#upload-picture form {
+#form-picture {
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding:20px 0;
+    border-radius: 5px;
 }
 
 #upload-picture form #picture,
@@ -61,6 +63,27 @@ header h1 span {
     width: 100%;
     display: block;
     margin: 0 auto;
+}
+
+#picture-label {
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+
+}
+#submit-btn {
+    background-color: #58c4b8;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.1em;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+    width:80px;
+}
+
+#submit-btn:hover{
+    font-weight: 400;
 }
 
 /*GALLERY*/

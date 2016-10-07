@@ -12,15 +12,15 @@
             <title>WCS | Concours des plus belles chaussettes !</title>
             <meta charset="utf-8" name="viewport" >
             <meta name="Concours des plus belles chaussettes de la Wild Code School" >
-            <!-- Fonts -->
-            <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
-            <script src="https://use.fontawesome.com/d97479808e.js"></script>
-            <!--Bootstrap CDN for CSS-->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-            <!--Our stylesheet-->
-            <link rel="stylesheet" href="../public/css/style.css">
-            <!--Our script-->
-            <script src="script.js"></script>
+                <!-- Fonts -->
+                <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+                <script src="https://use.fontawesome.com/d97479808e.js"></script>
+                <!--Bootstrap CDN for CSS-->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <!--Our stylesheet-->
+                <link rel="stylesheet" href="../public/css/style.css">
+                <!--Our script-->
+                <script src="script.js"></script>
         </head>
         <body id="upload-page">
 
@@ -34,16 +34,18 @@
         <section id="upload-picture">
             <div class="row">
                 <div class="container">
-                    <h1>Sélectionnez une photographie pour participer au concours.</h1>
+                    <h1>Sélectionnez une photographie pour <span>participer</span> au concours.</h1>
                     <hr>
 
-                    <div class="col-xs-12 col-md-4 col-md-offset-4">
-                        <form method="post" action="../src/form.php" enctype="multipart/form-data" id="">
-                            <label for="picture">Photographie à envoyer</label><br>
-                            <input type="file" name="picture" id="picture"><br>
-                            <input type="text" name="guest_name" id="guest_name" placeholder="Nom et prénom"><br>
-                            <input type="submit" value="envoyer">
-                        </form>
+                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4" id="form-picture">
+                        <div class="col-xs-12 col-md-10 col-md-offset-1">
+                            <form method="post" action="../src/form.php" enctype="multipart/form-data" id="">
+                                <label for="picture" id="picture-label">Photographie à envoyer</label><br>
+                                <input type="file" name="picture" id="picture"><br>
+                                <input type="text" name="guest_name" id="guest_name" placeholder="Nom et prénom"><br>
+                                <input type="submit" value="Envoyer" id="submit-btn">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
