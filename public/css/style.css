@@ -32,6 +32,11 @@ hr {
     font-weight:400;
 }
 
+.socks-images img {
+    display: block;
+    width:100%;
+}
+
 button.like {
     background-color: rgba(255,255,255, 0.8);
     border:none;
@@ -46,3 +51,4 @@ button.like {
 button.like:hover {
     color: #BF002E;
 }
+

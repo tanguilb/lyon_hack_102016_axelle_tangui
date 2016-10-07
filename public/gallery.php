@@ -35,7 +35,7 @@
                         $res = execSql(getConnexion(), $sql);
 
                         while ($row = $res->fetch_assoc()) {
-                            echo '<div class="col-xs 12 col-md-4" id="socks-images"><img src="' . $row["path_picture"] . '"> . <button class="like"><i class="fa fa-heart" aria-hidden="true"></i></button></div>';
+                            echo '<div class="col-xs 12 col-md-4 socks-images"><img src="' . $row["path_picture"] . '"> . <button class="like"><i class="fa fa-heart" aria-hidden="true"></i></button></div>';
                         }
                     ?>
             </div>
