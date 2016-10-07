@@ -26,14 +26,6 @@
         <script src="script.js"></script>
     </head>
 
-    <body>
-    <header>
-        <a href="http"><img id="logo-wcs" src="images/logo-wildcodeschool.png" alt="Logo of Wild Code School" /></a>
-    </header>
-
-
-
-
     <body id="connect-gallery">
 
     <header class="container-fluid">

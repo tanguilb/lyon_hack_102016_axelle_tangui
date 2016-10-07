@@ -44,13 +44,12 @@
 
 
                         while ($row = $result->fetch_assoc()) {
-                        $id = $row['id'];
+
 
                     echo '<div class="col-xs 12 col-md-4 socks-images"><img src="' . $row["path_picture"] . '"> 
-                            <form method="post" action="addlike.php" >' ?>
+                          <form method="post" action="addlike.php" >' ?>
 
-                    <input type="hidden" name="id[]" value="<?php $row['id']; ?>">
-                    <button type="submit" class="like"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                    <button onclick="vote(<?php echo $row['id']; ?>" class="like"><i class="fa fa-heart" aria-hidden="true"></i></button>
                     </form>
                 </div>
                 <?php
