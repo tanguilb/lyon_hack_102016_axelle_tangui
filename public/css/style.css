@@ -4,23 +4,18 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
 }
-
-h1 {
-    font-weight: 300;
-    color: #000;
-    font-size: 1.4em;
-    text-align: center;
-}
-
-h1 span {
-    font-weight: 400;
-}
-
 hr {
     width:50px;
     color: #58c4b8;
     border: 1px solid #58c4b8;
     margin-bottom:30px;
+}
+
+h1 {
+    font-weight: 300;
+    color: rgba(251,168,88, 1);
+    text-align: center;
+    margin-top:50px;
 }
 
 /*HEADER*/
@@ -33,6 +28,39 @@ header {
     display: block;
     margin: 0 auto;
     width: 80px;
+}
+
+header h1 {
+    font-weight: 300;
+    color: #000;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+header h1 span {
+    font-weight: 400;
+}
+
+
+/*INDEX | UPLOAD PAGE*/
+
+#upload-page {
+    background: url("../images/coding-site-web.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+#upload-picture form {
+    text-align: center;
+}
+
+#upload-picture form #picture,
+#upload-picture form #guest_name {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 /*GALLERY*/
@@ -68,7 +96,7 @@ button.like {
     color: #F23F66;
     font-size:1.8em;
     border-radius: 90px;
-    padding: 6px 10px;
+    padding: 6px 11px;
     position: absolute;
     bottom:10px;
     right:25px;
