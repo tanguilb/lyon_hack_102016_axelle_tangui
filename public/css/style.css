@@ -32,6 +32,10 @@ hr {
     font-weight:400;
 }
 
+#pictures-row {
+    background-color: #f1f1f1;
+}
+
 .socks-images img {
     display: block;
     width:100%;

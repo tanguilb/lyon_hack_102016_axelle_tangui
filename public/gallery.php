@@ -29,7 +29,7 @@
                 <hr>
             </div>
 
-            <div class="row">
+            <div class="row" id="pictures-row">
                     <?php
                         $sql = 'SELECT path_picture FROM guest';
                         $res = execSql(getConnexion(), $sql);
