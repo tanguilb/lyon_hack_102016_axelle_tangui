@@ -6,14 +6,43 @@ body {
     back
 }
 
-h2 {
+hr {
+    width:50px;
+    color: #58c4b8;
+    border: 1px solid #58c4b8;
+}
+ /*HEADER*/
+
+
+#logo-wcs {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+/*GALLERY*/
+
+#gallery h2 {
     font-weight: 300;
     color: rgba(251,168,88, 1);
     text-align: center;
 }
 
-hr {
-    width:50px;
-    color: #35383a;
-    border: 1px solid #35383a;
+#gallery h2 span {
+    font-weight:400;
+}
+
+button.like {
+    background-color: rgba(255,255,255, 0.8);
+    border:none;
+    color: #F23F66;
+    font-size:1.8em;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button.like:hover {
+    color: #BF002E;
 }
