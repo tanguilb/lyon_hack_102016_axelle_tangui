@@ -47,7 +47,7 @@
                             <input type="hidden" name="<?php echo $i; ?> ">
                             <button type="submit" class="like" ><i class="fa fa-heart" aria-hidden="true"></i></button>
                             </form>
-                            </div>q
+                            </div>
                             <?php
                             $i++;
 
