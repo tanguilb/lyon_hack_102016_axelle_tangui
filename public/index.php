@@ -9,14 +9,14 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <title>COncours des plus belles chaussettes</title>
+            <title>WCS | Concours des plus belles chaussettes !</title>
             <meta charset="utf-8" name="viewport" >
-            <meta name="Concours des plus belles chaussettes de la wild code school" >
+            <meta name="Concours des plus belles chaussettes de la Wild Code School" >
             <link rel="stylesheet" src="css/style.css" >
         </head>
         <body>
 
-            <h1>Sélectionner le fichier et nommer le :</h1>
+            <h1>Sélectionnez une photographie pour le concours</h1>
 
             <form method="post" action="../src/form.php" enctype="multipart/form-data">
                 <label for="picture">Photo à envoyer</label><br>

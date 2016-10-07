@@ -40,8 +40,6 @@ if (isset($_FILES['picture']) AND $_FILES['picture']['error'] == 0)
 
             move_uploaded_file($_FILES['picture']['tmp_name'], '../public/img/' . basename($_FILES['picture']['name']));
 
-            echo "L'envoi a bien été effectué !";
-
         }
 
     }
