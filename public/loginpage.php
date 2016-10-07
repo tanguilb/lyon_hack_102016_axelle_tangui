@@ -11,16 +11,21 @@
     <head>
         <title>WCS | Se connecter pour choisir vos chaussettes préférées.</title>
         <meta charset="utf-8">
+
+        <meta name="description" content="Bienvenue dans notre galerie photos pour l'élection des meilleures chaussettes de l'inauguration de la Wild Code School.">
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
         <script src="https://use.fontawesome.com/d97479808e.js"></script>
         <!--Bootstrap CDN for CSS-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!--Our stylesheet-->
+
         <link rel="stylesheet" href="css/style.css">
         <!--Our script-->
         <script src="script.js"></script>
     </head>
+
     <body id="connect-gallery">
 
     <header class="container-fluid">
@@ -45,5 +50,6 @@
                 </div>
             </div>
     </section>
+
     </body>
 </html>

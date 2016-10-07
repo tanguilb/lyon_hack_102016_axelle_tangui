@@ -7,7 +7,7 @@
  */
 function getConnexion(){
     $host = "localhost";
-    $password = "123456";
+    $password = "azerty1234";
     $user = "root";
     $db = "sock";
 

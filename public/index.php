@@ -12,6 +12,7 @@
             <title>WCS | Concours des plus belles chaussettes !</title>
             <meta charset="utf-8" name="viewport" >
             <meta name="Concours des plus belles chaussettes de la Wild Code School" >
+
                 <!-- Fonts -->
                 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
                 <script src="https://use.fontawesome.com/d97479808e.js"></script>
@@ -21,8 +22,10 @@
                 <link rel="stylesheet" href="../public/css/style.css">
                 <!--Our script-->
                 <script src="script.js"></script>
+
         </head>
         <body id="upload-page">
+
 
         <header class="container-fluid">
             <a href="http://www.wildcodeschool.fr/">
@@ -30,6 +33,7 @@
             </a>
             <h1><span>Apprends à coder</span> <br>sans chaussures !</h1>
         </header>
+
 
         <section id="upload-picture">
             <div class="row">
