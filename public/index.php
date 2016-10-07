@@ -34,7 +34,7 @@
         <section id="upload-picture">
             <div class="row">
                 <div class="container">
-                    <h1>Sélectionnez une photographie pour <span>participer</span> au concours.</h1>
+                    <h2>Sélectionnez la photographie <span>du participant</span> au concours.</h2>
                     <hr>
 
                     <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4" id="form-picture">
@@ -42,8 +42,8 @@
                             <form method="post" action="../src/form.php" enctype="multipart/form-data" id="">
                                 <label for="picture" id="picture-label">Photographie à envoyer</label><br>
                                 <input type="file" name="picture" id="picture"><br>
-                                <input type="text" name="guest_name" id="guest_name" placeholder="Nom et prénom"><br>
-                                <input type="submit" value="Envoyer" id="submit-btn">
+                                <input type="text" name="guest_name" id="guest_name" placeholder="Nom et prénom du participant"><br>
+                                <input type="submit" value="Envoyer" class="submit-btn">
                             </form>
                         </div>
                     </div>
