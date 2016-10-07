@@ -16,7 +16,7 @@
     <body>
         <h1>Veuillez vous connecter pour voter</h1>
 
-        <form action="login.php" method="post">
+        <form action="gallery.php" method="post">
             <label for="login">Entrez votre nom</label>
             <input type="text" name="login" id="login">
             <input type="submit" value="Se connecter">
