@@ -11,17 +11,23 @@ hr {
     margin-bottom:30px;
 }
 
-h1 {
+h2 {
     font-weight: 300;
     color: rgba(251,168,88, 1);
     text-align: center;
     margin-top:50px;
+    font-size: 2em;
+}
+
+h2 span {
+    font-weight:400;
 }
 
 /*HEADER*/
 
 header {
     padding-top:20px;
+    background: ;
 }
 
 #logo-wcs {
@@ -43,23 +49,27 @@ header h1 {
 }
 
 
-header h1 span {
+header h1 span,
+#upload-page h1 span{
+
     font-weight: 400;
 }
 
-
 /*INDEX | UPLOAD PAGE*/
-
 #upload-page {
-    background: url("../images/coding-site-web.jpg");
+    background: url("../images/computer-coding-site-web.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height:100vh;
 }
 
-#upload-picture form {
+#form-picture,
+#form-connect {
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding:20px 0;
+    border-radius: 5px;
+    margin-bottom: 50px;
 }
 
 #upload-picture form #picture,
@@ -70,18 +80,34 @@ header h1 span {
 }
 
 
+
 /*GALLERY*/
 
-#gallery h2 {
-    font-weight: 300;
-    color: rgba(251,168,88, 1);
-    text-align: center;
-    margin-top:50px;
+#picture-label {
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+
 }
 
-#gallery h2 span {
-    font-weight:400;
+
+.submit-btn {
+    background-color: #58c4b8;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.1em;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+    width:80px;
 }
+
+.submit-btn:hover{
+    font-weight: 400;
+}
+
+
+/*GALLERY*/
 
 
 #pictures-row {
@@ -112,5 +138,18 @@ button.like {
 
 button.like:hover {
     color: #BF002E;
+}
+
+
+/*LOGIN PAGE FOR GUESTS*/
+
+#connect-gallery {
+    background: url("../images/coding-site-web.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#form-connect .submit-btn {
+    width:100px;
 }
 
